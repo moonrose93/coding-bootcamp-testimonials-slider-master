@@ -14,8 +14,8 @@ function nextPerson() {
     
     personImage.src = "/image-john.jpg";
     quoteElDesktop.innerHTML = `“ If you want to lay the best foundation possible I’d recommend taking this course. 
-    The depth the instructors go into is incredible. I now feel so confident about 
-    starting up as a professional developer. ”`
+  The depth the instructors go into is incredible. I now feel so confident about 
+  starting up as a professional developer. ”`
     personName.innerHTML = `John Tarkpor`;
     personPosition.innerHTML = ` Junior Front-end Developer`;
 }
