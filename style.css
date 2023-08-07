@@ -1,0 +1,220 @@
+body{
+    min-height: 100vh;
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    align-items: center;
+}
+
+.quote{
+    margin-top: 60px;
+    letter-spacing: 0.05rem;
+    z-index: 2;
+    
+}
+
+.quothes{
+    position: absolute;
+    left: 32%;
+    top: 37%;
+    width: 72px;
+}
+
+.name-position{
+    display: flex;
+    font-size: 1rem;
+    position: relative;
+    top: 50%;
+}
+
+.position{
+    color: rgba(77, 71, 71, 0.712);
+}
+
+.name{
+    margin-right: 5px;
+    font-weight: 700;
+    
+}
+
+
+.curve{
+    position: absolute;
+    top: 85%;
+}
+
+.right{
+    display: flex;
+}
+
+.bkg{
+    position: absolute;
+    left: 48%;
+    top:15%;
+    z-index: -1;
+}
+
+ .pre{
+    margin-right: 30px;
+}
+
+.arrows{
+    background: white;
+    border-radius: 15px;
+}
+
+.prev{
+    outline: none;
+    border: none;
+    background: white;
+    cursor: pointer;
+
+}
+
+.arrows{
+    position: absolute;
+    bottom: -20px;
+    left: 610px;
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 6px 0px 20px 1px rgba(77, 71, 71, 0.3);
+}
+
+.next{
+    border: none;
+    outline: none;
+    background: white;
+    cursor: pointer;
+}
+
+
+.quote-mobile{
+    display: none;
+}
+
+.image-tanya{
+    width: 550px;
+    position: relative;
+    left: 20px;
+     box-shadow:  0px 6px 20px 5px rgba(77, 71, 71, 0.3);
+}
+
+
+
+
+.left{
+    width: 550px;
+    position: relative;
+    left:10%;
+    z-index: 2;
+}
+
+.right{
+    
+}
+
+@media(max-width:480px){
+ 
+.container{
+    flex-direction: column-reverse;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    margin-top: 230px;
+    margin-left: 110px;
+}
+
+.quote{
+    text-align: center;
+}
+
+.image-tanya{
+    width: 100%;
+    width: 450px;
+    position: relative;
+    left: 20px;
+     box-shadow:  0px 6px 20px 5px rgba(77, 71, 71, 0.3);
+}
+
+
+.bkg{
+    position: absolute;
+    width: 560px;
+    left: 30px;
+    top:5px;
+    margin-top: 30px;
+  
+}
+
+
+.curve{
+    position: absolute;
+    top: 1100px;
+}
+
+
+.left{
+    width: 100%;
+    width: 550px;
+    position: relative;
+    left:0%;
+    z-index: 2;
+    margin-top: 100px;
+}
+.quote{
+    display: none;
+}
+
+
+.quote-mobile{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+.quothes{
+    position: absolute;
+    left: 70%;
+    top: 640px;
+    width: 100px;
+}
+
+.arrows{
+    position: absolute;
+    bottom: 520px;
+    left: 220px;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 6px 0px 20px 1px rgba(77, 71, 71, 0.3);
+}
+
+.name-position{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    position: relative;
+    top: -12px;
+    line-height: 0.02rem;
+    text-align: center;
+
+}
+
+.name{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+}
