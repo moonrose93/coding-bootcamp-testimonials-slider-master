@@ -2,6 +2,7 @@ body{
     min-height: 100vh;
     font-size: 1.6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 .container{
@@ -10,6 +11,8 @@ body{
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
+    width: 100%;
+    max-width: 1200px;
     align-items: center;
 }
 
@@ -50,9 +53,7 @@ body{
     top: 85%;
 }
 
-.right{
-    display: flex;
-}
+
 
 .bkg{
     position: absolute;
@@ -106,6 +107,9 @@ body{
      box-shadow:  0px 6px 20px 5px rgba(77, 71, 71, 0.3);
 }
 
+.curve-mobile{
+    display: none;
+}
 
 
 
@@ -116,11 +120,11 @@ body{
     z-index: 2;
 }
 
-.right{
-    
-}
+
 
 @media(max-width:480px){
+
+  
  
 .container{
     flex-direction: column-reverse;
@@ -128,8 +132,10 @@ body{
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    margin-top: 230px;
-    margin-left: 110px;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 130px;
+    
 }
 
 .quote{
@@ -138,34 +144,61 @@ body{
 
 .image-tanya{
     width: 100%;
-    width: 450px;
+    max-width: 250px;
     position: relative;
-    left: 20px;
-     box-shadow:  0px 6px 20px 5px rgba(77, 71, 71, 0.3);
+    left: 0px;
+    bottom: 120px;
+    
+}
+.left{
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    max-height: 260px;
+    
+    position: relative;
+    left:0%;
+    z-index: 2;
 }
 
 
 .bkg{
     position: absolute;
-    width: 560px;
+    width: 100%;
+    max-width: 330px;
     left: 30px;
-    top:5px;
-    margin-top: 30px;
+    top:0px;
+    margin-top: 20px;
+    
   
+}
+
+.bkg-mobile{
+    width: 100%;
+    max-width: 350px;
+}
+
+.curve-mobile{
+    display: block;
 }
 
 
 .curve{
-    position: absolute;
-    top: 1100px;
+   display: none;
+}
+
+.curve-mobile{
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    top: 20px;
 }
 
 
 .left{
     width: 100%;
-    width: 550px;
+    width: 400px;
     position: relative;
-    left:0%;
     z-index: 2;
     margin-top: 100px;
 }
@@ -177,22 +210,24 @@ body{
 .quote-mobile{
     display: block;
     text-align: center;
-    padding: 15px;
-    font-size: 2rem;
-    line-height: 2.6rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    position: relative;
+    bottom: 140px;
 }
 .quothes{
     position: absolute;
-    left: 70%;
-    top: 640px;
-    width: 100px;
+    left:160px;
+    top: 385px;
+    width: 100%;
+    max-width: 65px;
 }
 
 .arrows{
     position: absolute;
-    bottom: 520px;
-    left: 220px;
-    padding: 20px;
+    bottom: 470px;
+    left: 140px;
+    padding: 5px;
     border-radius: 50px;
     box-shadow: 6px 0px 20px 1px rgba(77, 71, 71, 0.3);
 }
@@ -200,9 +235,9 @@ body{
 .name-position{
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
+    font-size: 1.2rem;
     position: relative;
-    top: -12px;
+    top: -150px;
     line-height: 0.02rem;
     text-align: center;
 
@@ -211,6 +246,8 @@ body{
 .name{
     margin-bottom: 10px;
 }
+
+
 
 
 
