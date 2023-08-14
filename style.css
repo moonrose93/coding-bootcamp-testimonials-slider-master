@@ -188,6 +188,7 @@ body{
 }
 
 .curve-mobile{
+    display: block;
     width: 100%;
     max-width: 400px;
     position: relative;
